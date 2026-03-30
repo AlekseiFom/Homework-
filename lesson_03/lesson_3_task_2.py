@@ -19,7 +19,7 @@ catalog = [
     Smartphone(
         "Xaomi",
         "Note 05",
-        "-79856942255"
+        "+79856942255"
     ),
     Smartphone(
         "Nokia",
