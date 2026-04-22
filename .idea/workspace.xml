@@ -29,104 +29,29 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AlekseiFom&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlekseiFom/Homework-&quot;,
-    &quot;accountId&quot;: &quot;ce1d1b4a-d721-4a89-aa2c-1369ef4970e3&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="3AqvlZYkBhxnX2joHgauHzCl7vn" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.vscode/lesson_06/lesson_6_task_1.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.vscode/lesson_06/lesson_6_task_2.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.vscode/lesson_06/lesson_6_task_3.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.lesson_1_task_3.executor": "Run",
-    "Python.lesson_2_task.executor": "Run",
-    "Python.lesson_2_task_1.executor": "Run",
-    "Python.lesson_2_task_2.executor": "Run",
-    "Python.lesson_2_task_3.executor": "Run",
-    "Python.lesson_2_task_4.executor": "Run",
-    "Python.lesson_2_task_5.executor": "Run",
-    "Python.lesson_2_task_6.executor": "Run",
-    "Python.lesson_2_task_7.executor": "Run",
-    "Python.треннировка.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Python.lesson_6_task_1.executor": "Run",
+    "Python.lesson_6_task_2.executor": "Run",
+    "Python.lesson_6_task_3.executor": "Run",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "lesson3",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "git-widget-placeholder": "lesson6"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Пользователь\Tracing\Homework-\.vscode" />
+    </key>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="5a8daf6f-1f75-430d-9caa-660061a40d1c" name="Changes" comment="" />
-      <created>1773333068503</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1773333068503</updated>
-    </task>
-    <task id="LOCAL-00001" summary="lesson2: решения семи задач">
-      <option name="closed" value="true" />
-      <created>1773773747238</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1773773747238</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson3: классное решение задач по классам">
-      <option name="closed" value="true" />
-      <created>1774820053510</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1774820053511</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="e3533b17-5851-43fa-b32f-067b4cde32dd" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-        <entry key="e3533b17-5851-43fa-b32f-067b4cde32dd">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson2: решения семи задач" />
-    <MESSAGE value="lesson3: классное решение задач по классам" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson3: классное решение задач по классам" />
   </component>
 </project>
