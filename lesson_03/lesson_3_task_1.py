@@ -3,6 +3,6 @@ from user import User
 my_user = User("Николай", "Гоголь")
 
 
-my_user.say_name()
-my_user.say_lname()
-my_user.say_all()
+my_user.print_first_name()
+my_user.print_last_name()
+my_user.print_full_name()

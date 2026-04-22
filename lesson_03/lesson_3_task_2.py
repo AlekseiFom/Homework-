@@ -3,7 +3,7 @@ from smartphone import Smartphone
 catalog = [
     Smartphone(
         "iphone",
-        "17pro",
+        "17",
         "+79123456789"
     ),
     Smartphone(
@@ -19,7 +19,7 @@ catalog = [
     Smartphone(
         "Xaomi",
         "Note 05",
-        "-79856942255"
+        "+79856942255"
     ),
     Smartphone(
         "Nokia",
