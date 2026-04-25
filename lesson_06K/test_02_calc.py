@@ -9,8 +9,7 @@ def test_slow_calculator():
         element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#delay')))
         element.clear()
         element.send_keys("45")
-        btns = driver.find_elements(By.CSS_SELECTOR, ".btn")
-        def click_button(btns, value):
+        def click_button(btns: list, value: str):
             for btn in btns:
                 if btn.text.strip() == value:
                     btn.click()
