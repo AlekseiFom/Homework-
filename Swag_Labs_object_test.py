@@ -15,6 +15,7 @@ def test_shop(browser):
     prod_page.add_multiple_items (["Sauce Labs Backpack","Sauce Labs Bolt T-Shirt", "Sauce Labs Onesie"])
     prod_page.go_to_card_page()
 
+
     cart_page = CartPage(browser)
     cart_page.go_to_checkout()
 
@@ -24,6 +25,5 @@ def test_shop(browser):
 
     checkout_overview_page = CheckoutOverviewPage(browser)
     checkout_overview_page.wait_for_loaded()
-    total = checkout_overview_page.get_total_amount()
-    print("TOTAL FROM TEST:", total)
+    total = checkout_overview_page.get_total_amount("58.29")  # Передаем ожидаемую сумму
     assert total == 58.29

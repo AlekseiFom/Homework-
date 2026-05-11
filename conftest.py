@@ -4,7 +4,7 @@ from selenium import webdriver
 @pytest.fixture(scope="session")
 def browser():
     options = webdriver.ChromeOptions()
-    options.add_argument(r"--user-data-dir=C:\Users\Пользователь\Tracing\chrome-profile-tests")
+    #options.add_argument(r"--user-data-dir=C:\Users\Пользователь\Tracing\chrome-profile-tests")
     options.add_argument("--no-first-run")
 
     prefs = {

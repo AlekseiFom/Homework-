@@ -15,14 +15,13 @@ class CheckoutOverviewPage:
             )
         )
 
-    def get_total_amount(self):
+    def get_total_amount(self, expected_value: str):
         WebDriverWait(self.driver, 10).until(
             EC.text_to_be_present_in_element(
                 (By.CSS_SELECTOR, ".summary_total_label"),
-                "Total: $"
+                expected_value
             )
         )
         element = self.driver.find_element(By.CSS_SELECTOR, ".summary_total_label")
         text = element.text
-        print("SUMMARY LABEL TEXT:", repr(text))
         return float(text.split("$")[1].strip())
