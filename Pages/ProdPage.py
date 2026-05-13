@@ -18,53 +18,34 @@ class ProdPage:
         formatted_name = item_name.lower().replace(" ", "-")
         locator = (By.CSS_SELECTOR, f"button[id*='{formatted_name}']")
 
-        # Повторяем до 3 раз на случай stale element
         for attempt in range(3):
             try:
-
+                # Ждём появления кнопки
                 button = WebDriverWait(self.driver, 10).until(
                     EC.presence_of_element_located(locator)
                 )
-
+                # Если уже "Remove" — товар в корзине
                 if button.text == "Remove":
                     print(f"Товар {item_name} уже в корзине, пропускаем")
                     return
 
-
+                # Скроллим и кликаем
                 self.driver.execute_script("arguments[0].scrollIntoView(true);", button)
-                WebDriverWait(self.driver, 5).until(
-                    EC.element_to_be_clickable(locator)
-                )
-                button.click()
+                WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(locator)).click()
 
+                # Ждём, пока текст сменится на "Remove"
                 WebDriverWait(self.driver, 5).until(
                     EC.text_to_be_present_in_element(locator, "Remove")
                 )
-                return  # Выходим, если всё ок
+                return  # Успешно добавили
 
             except StaleElementReferenceException:
-                continue
-            except TimeoutException as e:
-
-                try:
-                    button = self.driver.find_element(*locator)
-                    if button.text != "Remove":
-                        self.driver.execute_script("arguments[0].click();", button)
-                        WebDriverWait(self.driver, 3).until(
-                            EC.text_to_be_present_in_element(locator, "Remove")
-                        )
-                        return
-                except:
-                    pass
+                continue  # просто повторить попытку
+            except (TimeoutException, Exception) as e:
                 if attempt == 2:
-                    raise
-            except Exception as e:
-                print(f"Неизвестная ошибка: {e}")
-                if attempt == 2:
-                    raise
-
+                    raise  # если последняя попытка — выбрасываем ошибку
+                continue  # иначе пробуем снова
         raise Exception(f"Не удалось добавить товар {item_name} после 3 попыток")
-
     def go_to_card_page(self):
         self.driver.get('https://www.saucedemo.com/cart.html')
         self.driver.maximize_window()

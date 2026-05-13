@@ -22,15 +22,10 @@ class MainPage:
             ".": ".", "+": "+", "-": "-", "/": "÷", "*": "x"
         }
         for ch in expr:
-            # Убеждаемся, что не пытаемся нажать "=" здесь
             if ch == "=": continue
 
             text = display_map[ch]
             self.driver.find_element(By.XPATH, f"//span[text()='{text}']").click()
-
-    def click_equal(self):
-        # Нажимаем ту самую оранжевую кнопку
-        self.driver.find_element(By.CSS_SELECTOR, "span.btn-outline-warning").click()
 
     def click_equal(self):
         equal_locator = (By.XPATH, "//span[@class='btn btn-outline-warning' and text()='=']")

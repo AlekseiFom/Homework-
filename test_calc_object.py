@@ -6,8 +6,8 @@ from Pages.MainPage import MainPage
 
 
 
-def test_calkulator(browser):
-    main_page = MainPage(browser, delay=time_)
+def test_calkulator(chrome_browser):
+    main_page = MainPage(chrome_browser, delay=time_)
 
     main_page.set_delay()
     main_page.send_expression("7+8")

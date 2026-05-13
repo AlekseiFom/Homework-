@@ -8,7 +8,7 @@ class LoginPage:
         self.driver.get("https://www.saucedemo.com/")
         self.driver.maximize_window()
 
-    def login(self, user, password ):
+    def login(self, user, password):
         self.driver.find_element(By.CSS_SELECTOR, '#user-name').send_keys(user)
         self.driver.find_element(By.CSS_SELECTOR, '#password').send_keys(password )
         self.driver.find_element(By.CSS_SELECTOR, '#login-button').click()
