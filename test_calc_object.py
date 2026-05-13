@@ -7,6 +7,7 @@ from Pages.MainPage import MainPage
 
 
 def test_calkulator(chrome_browser):
+    time_ = 45
     main_page = MainPage(chrome_browser, delay=time_)
 
     main_page.set_delay()
@@ -17,4 +18,3 @@ def test_calkulator(chrome_browser):
     actual = main_page.get_result_text(expected=expected)
     assert actual.strip() == expected
 
-time_ = 45
