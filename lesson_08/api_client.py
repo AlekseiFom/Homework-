@@ -1,4 +1,9 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+my_key = os.getenv("my_key")
 
 
 class YouGileApiClient:
@@ -6,7 +11,7 @@ class YouGileApiClient:
         self.base_url = "https://ru.yougile.com/api-v2/"
 
         # "СЮДА_ВСТАВИТЬ_КЛЮЧ_ИЗ_ИНСТРУКЦИИ"
-        self.my_key = "!!!"
+        self.my_key = my_key
 
         # Headers для авторизации запросов
         self.headers = {
