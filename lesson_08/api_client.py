@@ -5,7 +5,7 @@ class YouGileApiClient:
     def __init__(self):
         self.base_url = "https://ru.yougile.com/api-v2/"
 
-        #"СЮДА_ВСТАВИТЬ_КЛЮЧ_ИЗ_ИНСТРУКЦИИ"
+        # "СЮДА_ВСТАВИТЬ_КЛЮЧ_ИЗ_ИНСТРУКЦИИ"
         self.my_key = "!!!"
 
         # Headers для авторизации запросов
