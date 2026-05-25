@@ -2,7 +2,7 @@ import pytest
 from sqlalchemy import create_engine
 from subject_table import SubjectTable
 
-DB_URL = "postgresql://qa:skyqa@5.101.50.27:5432/x_clients"
+DB_URL = "postgresql://postgres@localhost:5432/QA"
 db = create_engine(DB_URL, echo=True)
 
 
